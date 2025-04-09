@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+body {
+    height: 10000px;
+}
+
+@font-face {
+    font-family: DavidLibre-Regular;
+    src: url(fonts/David_Libre/DavidLibre-Regular.ttf);
+
+    font-family: LuxuriousRoman;
+    src: url(fonts/Luxurious_Roman/LuxuriousRoman-Regular.ttf);
+
+    font-family: Alef;
+    src: url(fonts/Alef/Alef-Regular.ttf);
+}
+
+.stiky_nav {
+    height: 80px;
+    background-color: #b7b7a4;
+    position: sticky;
+    top: 0;
+
+    /* background-color: #9d9283; = אופציה לצבע - לבדוק עם מאמי */
+}
+
+.protfolio_logo {
+    float: left;
+    border: 0px solid #000;
+    border-radius: 50%;
+    margin: 0px -150px 0px 150px;
+}
+
+img.protfolio_logo:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 0px #000;
+}
+
+div.stiky_nav p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+    margin: 30px -160px 0px 160px;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+div.stiky_nav nav ul li {
+    float: right;
+    display: block;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    margin: 25px 150px 0px -145px;
+    font-size: 1em;
+    font-family: DavidLibre-Regular, Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #f0e3d1;
+    border: 0px solid #000;
+    /* מתלבט האם להוסיף או להוריד את הבורדר - לשאול את מאמי */
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+div.stiky_nav nav ul li:hover {
+    transform: scale(0.95);
+    position: relative;
+    z-index: 2;
+    box-shadow: 1px 1px 5px 0px #000;
+    cursor: pointer;
+}
+
+
+
+
+span.MainHeader {
+    display: block;
+    margin: 0px auto;
+    padding: 10px;
+    text-align: center;
+    font-family: Alef, Arial, Helvetica, sans-serif;
+    background-image: url(images/main_header_background1.jpg);
+}
+
+span.MainHeader header {
+    font-size: 3em;
+    font-weight: bolder;
+    padding: 30px;
+}
+
+span.MainHeader p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: justify;
+    justify-content: center;
+    margin: 25px 300px 25px 300px;
+}
+
+div.AboutMe img {
+    display: block;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin: 15px auto;
+}
+
+div.AboutMe h1 {
+    font-size: 3em;
+    font-family: Alef, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+div.AboutMe p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+    margin: 25px 300px 25px 300px;
+}
+
+div.AboutMe button {
+    font-size: 1em;
+    font-family: Alef, Arial, Helvetica, sans-serif;
+    display: block;
+    margin: 0 auto;
+    padding: 2px;
+    background-color: #fff;
+    border: 3px outset black;
+    border-radius: 5px;
+}
+
+div.AboutMe button a {
+    text-decoration: none;
+    color: black;
+}
+
+div.AboutMe button:hover {
+    background-color: #dbdbdb;
+    transform: scale(0.9);
+    cursor: pointer;
+}
