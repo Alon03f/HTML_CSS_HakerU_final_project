@@ -22,7 +22,6 @@ body {
     background-color: #b7b7a4;
     position: sticky;
     top: 0;
-
     /* background-color: #9d9283; = אופציה לצבע - לבדוק עם מאמי */
 }
 
@@ -47,7 +46,6 @@ div.stiky_nav p {
 
 ul {
     list-style-type: none;
-
 }
 
 div.stiky_nav nav ul li {
@@ -75,9 +73,6 @@ div.stiky_nav nav ul li:hover {
     box-shadow: 1px 1px 5px 0px #000;
     cursor: pointer;
 }
-
-
-
 
 span.MainHeader {
     display: block;
@@ -142,4 +137,36 @@ div.AboutMe button:hover {
     background-color: #dbdbdb;
     transform: scale(0.9);
     cursor: pointer;
+}
+
+.containerGrid {
+    font-size: 1em;
+    font-family: serif;
+    font-family: Alef, Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 25px 300px 25px 300px;
+    gap: 20px;
+    text-align: center;
+    justify-items: center;
+}
+
+.containerGrid p {
+    width: 300px;
+    height: 300px;
+}
+
+.containerGrid p:nth-child(odd) {
+    background-color: rgb(150, 150, 150);
+}
+
+.containerGrid p:nth-child(even) {
+    background-color: rgb(200, 200, 200);
+}
+
+.containerGrid p:hover {
+    transform: scale(0.95);
+    box-shadow: 1px 1px 10px 0px;
+
 }
