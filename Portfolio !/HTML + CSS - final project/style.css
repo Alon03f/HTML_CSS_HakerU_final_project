@@ -94,7 +94,8 @@ span.MainHeader p {
     line-height: 1.5;
     text-align: justify;
     justify-content: center;
-    margin: 25px 300px 25px 300px;
+    margin: 25px 350px 25px 350px;
+
 }
 
 div.AboutMe img {
@@ -114,7 +115,7 @@ div.AboutMe p {
     font-size: 1.1em;
     line-height: 1.5;
     text-align: center;
-    margin: 25px 300px 25px 300px;
+    margin: 25px 350px 25px 350px;
 }
 
 div.AboutMe button {
