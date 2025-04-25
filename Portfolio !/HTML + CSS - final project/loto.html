@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loto</title>
+</head>
+
+<body>
+    <button id="btn">Click To Get The Numbers</button>
+    <div id="loto"></div>
+
+    <script>
+        const btn = document.getElementById('btn')
+        const loto = document.getElementById('loto')
+
+        btn.onclick = function(){
+            loto.innerHTML = " "
+            for(let x = 1; x<= 7; x++){
+                loto.innerHTML += Math.floor(Math.random()*37) + 1 + '<br>';
+        }
+    }
+    </script>
+</body>
+
+</html>

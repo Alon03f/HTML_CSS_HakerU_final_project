@@ -16,20 +16,20 @@
     <div class="stiky_nav">
 
         <img class="protfolio_logo" src="images/main_protfolio_logo.png" alt="website logo" width="80px" height="80px">
-
+        <a href="index.html"></a>
         <p>Alon Fridman</p>
 
         <nav>
             <ul>
-                <li>ראשי</li>
-                <li>אודות</li>
-                <li>פרויקטים</li>
-                <li>צור קשר</li>
+                <li><a href="#home">ראשי</a></li>
+                <li><a href="#about">אודות</a></li>
+                <li><a href="#projects">פרויקטים</a></li>
+                <li><a href="#contact">צור קשר</a></li>
             </ul>
         </nav>
     </div>
 
-    <span class="MainHeader">
+    <span class="MainHeader" id="home">
         <header>תיק עבודות</header>
         <p>
             לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש "ממלא מקום" בעת עריכה, בתחום הדפוס, ההדפסה
@@ -48,7 +48,7 @@
             בעתיד.
         </p>
     </span>
-    <div class="AboutMe">
+    <div class="AboutMe" id="about">
 
         <img src="images/portret.JPG" alt="Portrat photo" width="150px" height="150">
 
@@ -68,6 +68,8 @@
             מונחף, בגורמי
         </p>
 
+<br>
+
         <button>
             <a href="map.pdf" download="map.pdf">קורות חיים - אלון פרידמן</a>
         </button>
@@ -77,7 +79,7 @@
     <br>
 
     <!-- .containerGrid>p*6>lorem3+br+lorem10 -->
-    <div class="containerGrid">
+    <div class="containerGrid" id="projects">
         <p>
             <img src="images/main_protfolio_logo.png" alt="html site photo" width="300px" height="120px">
             <br>
@@ -111,7 +113,64 @@
             Quibusdam, aperiam nihil tempora ratione in nemo dolorum nisi laborum?
         </p>
 
+        <br>
+
     </div>
+
+    <!-- .contact-us>h1+p+form>label*4+button -->
+    <div class="contact-us" id="contact">
+        <h1>צור קשר</h1>
+        <p>
+            לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש ההדפסה
+            והפרסום. למשל:
+        </p>
+
+        <br>
+
+        <form action="">
+
+            <label for="first_name">שם מלא</label>
+            <br>
+            <input type="text" id="first_name" required placeholder="שם מלא" oninvalid="this.setCustomValidity('נא לכתוב שם מלא')">
+            <br>
+            <label for="email">דוא''ל</label>
+            <br>
+            <input type="email" id="email" required placeholder="abcd@gmail.com" oninvalid="this.setCustomValidity('נא לכתוב דואר אלקטרוני')" >
+            <br>
+            <label for="phone_number">טלפון</label>
+            <br>
+            <input type="tel" id="phone_number" required placeholder="456-7890-(123)" maxlength="12" oninvalid="this.setCustomValidity('נא לכתוב מספר טלפון')">
+            <br>
+            <label for="main_message">תוכן ההודעה</label>
+            <br>
+            <textarea id="main_message" required placeholder="תוכן ההודעה" oninvalid="this.setCustomValidity('נא למלא תוכן הודעה')"></textarea>
+            <br><br>
+            <button type="submit">שלח</button>
+        </form>
+    </div>
+
+    <footer class="custom-footer">
+        <div class="footer-links">
+            <a class="footer-item" href="https://www.instagram.com/alon_z?igsh=OWkxYnVsdXUxNDVt&utm_source=qr" target="_blank">
+                <img src="images/instegram.png" alt="Instagram logo">
+                <p>Instagram</p>
+            </a>
+            <a class="footer-item" href="https://www.linkedin.com/in/alon-fridman-16a917352?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                <img src="images/linkrdin.webp" alt="Linkedin logo">
+                <p>Linkedin</p>
+            </a>
+            <a class="footer-item" href="mailto:yourmail@gmail.com">
+                <img src="images/gmail.jpg" alt="Gmail logo">
+                <p>Gmail</p>
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p>כל הזכויות שמורות</p>
+            <p>Alon Fridman</p>
+        </div>
+    </footer>
+    
+    
 </body>
 
 </html>
