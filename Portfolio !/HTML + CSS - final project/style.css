@@ -88,6 +88,19 @@ div.stiky_nav nav ul li:hover {
     height: 100%;
 }
 
+div.stiky_nav nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+div.stiky_nav nav ul li:hover ul {
+    display: block;
+}
+
 span.MainHeader {
     display: block;
     margin: 0px auto;
