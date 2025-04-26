@@ -1,0 +1,558 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    scroll-behavior: smooth;
+}
+
+#home,
+#university,
+#projects,
+#contact {
+    scroll-margin-top: 100px;
+}
+
+
+@font-face {
+    font-family: DavidLibre-Regular;
+    src: url(fonts/David_Libre/DavidLibre-Regular.ttf);
+
+    font-family: Alef;
+    src: url(fonts/Alef/Alef-Regular.ttf);
+}
+
+.stiky_nav {
+    height: 80px;
+    background-color: #b7b7a4;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* background-color: #9d9283; = אופציה לצבע - לבדוק עם מאמי */
+}
+
+.protfolio_logo {
+    float: left;
+    border: 0px solid #000;
+    border-radius: 50%;
+    margin: 0px -150px 0px 150px;
+}
+
+img.protfolio_logo:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 0px #000;
+}
+
+div.stiky_nav p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+    margin: 30px -160px 0px 160px;
+    font-size: 0.8em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+div.stiky_nav nav ul li {
+    float: right;
+    display: block;
+    width: 100px;
+    height: 30px;
+    margin: 25px 150px 0px -145px;
+    font-size: 1em;
+    font-family: DavidLibre-Regular, Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #f0e3d1;
+    border: 0px solid #000;
+    /* מתלבט האם להוסיף או להוריד את הבורדר - לשאול את מאמי */
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+div.stiky_nav nav ul li:hover {
+    transform: scale(0.95);
+    position: relative;
+    z-index: 2;
+    box-shadow: 1px 1px 5px 0px #000;
+    cursor: pointer;
+}
+
+.stiky_nav nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+div.stiky_nav nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+div.stiky_nav nav ul li:hover ul {
+    display: block;
+}
+
+span.MainHeader {
+    display: block;
+    margin: 0px auto;
+    padding: 10px;
+    text-align: center;
+    font-family: Alef, Arial, Helvetica, sans-serif;
+    background-image: url(images/main_header_background1.jpg);
+    height: 350px;
+}
+
+span.MainHeader header {
+    font-size: 3em;
+    font-weight: bolder;
+    padding: 30px;
+}
+
+span.MainHeader p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: justify;
+    justify-content: center;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+#university {
+    margin: 0 auto;
+    background-color: rgb(198, 201, 194, 0.8);
+    background: url('university-images/BGC.png');
+    background-size: 50px;
+    box-shadow: 0px 0px 20px 0px;
+    width: 1400px;
+    height: 700px;
+    line-height: 1.2;
+    font-size: 1em;
+    font-family: Alef, Arial, Helvetica, sans-serif;
+}
+
+#university img {
+    float: left;
+    width: 500px;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+#university span {
+    float: left;
+    margin: 150px 0px 0px 20px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(1.5px);
+}
+
+#university span p {
+    padding: 15px 0px 15px 0px;
+}
+
+#university span input {
+    width: 250px;
+    height: 30px;
+}
+
+#university span button {
+    display: block;
+    padding: 2px;
+    margin: 10px;
+    background-color: #fff;
+    border: 2px outset black;
+    border-radius: 5px;
+}
+
+#successMessage {
+    display: none;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: rgba(118, 255, 125, 0.3);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Alef, Arial, sans-serif;
+}
+
+.contact-us {
+    font-size: 1em;
+    font-family: Alef, Arial, Helvetica, sans-serif;
+    padding: 50px 190px 50px 900px;
+    background-color: #dbdbdb;
+    line-height: 1.5;
+}
+
+.contact-us form input {
+    width: 250px;
+    height: 30px;
+
+}
+
+.contact-us form textarea#main_message {
+    font-family: Alef, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    width: 250px;
+    height: 100px;
+    white-space: pre-wrap;
+    overflow-x: hidden;
+    resize: none;
+    padding: 5px;
+}
+
+.contact-us form button {
+    font-size: 1em;
+    font-family: Alef, Arial, Helvetica, sans-serif;
+    display: block;
+    padding: 2px;
+    background-color: #fff;
+    border: 2px outset black;
+    border-radius: 5px;
+}
+
+.contact-us form button:hover {
+    background-color: #dbdbdb;
+    transform: scale(0.9);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.custom-footer {
+    background-color: #b7b7a4;
+    width: 100%;
+    padding: 30px 0;
+    font-family: Alef, Arial, sans-serif;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 100%;
+}
+
+.footer-item img:hover {
+    transform: scale(1.1);
+}
+
+.footer-item p {
+    margin: 0;
+    font-size: 1em;
+    color: #000;
+}
+
+.footer_code img {
+    margin: 5px;
+    width: 60px;
+    height: 60px;
+}
+
+.footer-bottom p {
+    margin: 10px 0px 0px 0px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+@media (max-width: 1399.98px) {
+    .protfolio_logo {
+        width: 70px;
+        height: 70px;
+        margin: 5px -80px 0px 80px;
+    }
+
+    div.stiky_nav p {
+        margin: 30px 0px 0px 85px;
+        font-size: 0.8em;
+    }
+
+    div.stiky_nav nav ul li {
+        width: 90px;
+        margin: 20px 80px 0px -75px;
+    }
+
+    span.MainHeader {
+        height: 400px;
+    }
+
+    span.MainHeader p {
+        width: 800px;
+    }
+
+    div.AboutMe p {
+        width: 800px;
+    }
+
+    .containerGrid p {
+        height: 250px;
+    }
+
+    .contact-us {
+        padding: 50px 70px 50px 800px;
+    }
+
+    .footer_code img {
+        margin: 5px;
+        width: 50px;
+        height: 50px;
+    }
+
+    #university {
+        width: 1000px;
+        height: 700px;
+    }
+
+    #university img {
+        width: 300px;
+        margin-left: 50px;
+        margin-top: 170px;
+    }
+
+    #university span {
+        width: 550px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .protfolio_logo {
+        margin: 5px -30px 0px 30px;
+    }
+
+    div.stiky_nav p {
+        margin: 30px 0px 0px 45px;
+    }
+
+    div.stiky_nav nav ul li {
+        margin: 20px 50px 0px -45px;
+    }
+
+    span.MainHeader p {
+        width: 700px;
+    }
+
+    div.AboutMe p {
+        width: 700px;
+    }
+
+    .containerGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 20px;
+    }
+
+    .contact-us {
+        padding: 50px 70px 50px 550px;
+    }
+
+    .footer_code img {
+        margin: 5px;
+        width: 45px;
+        height: 45px;
+    }
+
+    #university {
+        width: 900px;
+        height: 500px;
+    }
+
+    #university img {
+        width: 250px;
+        margin-left: 50px;
+        margin-top: 100px;
+    }
+
+    #university span {
+        width: 500px;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .stiky_nav {
+        height: 70px;
+    }
+
+    .protfolio_logo {
+        width: 45px;
+        height: 45px;
+        margin: 20px -5px 0px 5px;
+    }
+
+    div.stiky_nav p {
+        margin: 5px -5px 0px -40px;
+        font-size: 0.7em;
+    }
+
+    div.stiky_nav nav ul li {
+        width: 80px;
+        height: 28px;
+        margin: 20px 15px 0px -5px;
+        font-size: 0.9em;
+    }
+
+    span.MainHeader {
+        height: 500px;
+    }
+
+    span.MainHeader p {
+        width: 600px;
+    }
+
+    div.AboutMe p {
+        width: 600px;
+    }
+
+    .containerGrid p {
+        height: 250px;
+    }
+
+    .contact-us {
+        padding: 50px 70px 50px 400px;
+    }
+
+    #university {
+        width: 700px;
+        height: 500px;
+    }
+
+    #university img {
+        width: 200px;
+        margin-left: 50px;
+        margin-top: 100px;
+    }
+
+    #university span {
+        width: 350px;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    div.stiky_nav nav ul li {
+        width: 65px;
+        font-size: 0.8em;
+    }
+
+    span.MainHeader {
+        height: 750px;
+    }
+
+    span.MainHeader p {
+        width: 400px;
+    }
+
+    div.AboutMe p {
+        width: 400px;
+    }
+
+    .containerGrid {
+        grid-template-columns: 1fr;
+        width: 400px;
+        gap: 10px;
+    }
+
+    .contact-us {
+        padding: 50px 70px 50px 200px;
+    }
+
+    #university {
+        width: 500px;
+        height: 500px;
+    }
+
+    #university img {
+        width: 150px;
+        margin-left: 50px;
+        margin-top: 100px;
+    }
+
+    #university span {
+        width: 250px;
+        margin-top: 50px;
+        margin-left: 30px;
+        font-size: 0.8em;
+    }
+
+    #university span input {
+        width: 200px;
+    }
+
+}
+
+@media (max-width: 575.98px) {
+
+    div.stiky_nav nav ul li {
+        width: 55px;
+    }
+
+    span.MainHeader {
+        height: 700px;
+    }
+
+    span.MainHeader p {
+        width: 300px;
+    }
+
+    div.AboutMe p {
+        width: 300px;
+    }
+
+    .containerGrid {
+        width: 300px;
+    }
+
+    .contact-us {
+        padding: 50px 70px 50px 40px;
+    }
+
+    #university {
+        width: 400px;
+        height: 500px;
+    }
+
+    #university img {
+        width: 150px;
+        margin-left: 50px;
+        margin-top: 150px;
+    }
+
+    #university span {
+        width: 100px;
+        width: 180px;
+        margin-top: 30px;
+        margin-left: 10px;
+        font-size: 0.8em;
+    }
+
+    #university span input {
+        width: 150px;
+    }
+
+}
