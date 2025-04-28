@@ -7,7 +7,7 @@
     <title>Alon's protfolio - university</title>
     <!-- <link rel="icon" href=""> -->
     <!-- צריך להשלים אייקון לאתר -->
-    <link rel="stylesheet" href="landding-1-style.css">
+    <link rel="stylesheet" href="coffe_coupon_page.css">
     <link rel="icon" href="images/logo.png">
 </head>
 
@@ -56,51 +56,28 @@
             מונחף, בגורמי
             מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס. הטקסט משמש כלי לייצוג דפוס שאמור להתווסף.
         </p>
+        <a href="projects/coffe_coupon/landing_page/coffe_coupon.html">
+            <button>
+                מעבר לדף הפקויירט
+            </button></a>
+        <a href="projects/coffe_coupon/coffe_coupon.zip" download="coffe_project">
+            <button>
+                להורדת קבצי הפרוייקט
+            </button></a>
     </span>
 
     </div>
 
     <br><br><br>
 
-    <div id="university">
-
-        <img src="university-images/university.png" alt="university image">
-        <span>
-            <h1>האוניברסיטה העברית הראשונה בלונדון לרפואה!</h1>
-            <p>
-                בואו להירשם יחד איתנו לאוניברסיטה העברית הראשונה בלונדון לרפואה.
-                <br>
-                האוניברסיטה מציאה לימוד רפואה בשפת האם שלכם - עברית!!
-                <br>
-                תנו לנו להוביל אותכם לתעודת הרופאה שלכם.
-                <br>
-                השאירו פרטים ונחזור אליכם:
-            </p>
-            <form id="university_form" action="">
-                <label>שם מלא</label>
-                <br>
-                <input type="text" required placeholder="שם מלא" oninvalid="this.setCustomValidity('נא לכתוב שם מלא')">
-                <br>
-                <label>מספר טלפון</label>
-                <br>
-                <input type="tel" required placeholder="456-7890-(123)" maxlength="12"
-                    oninvalid="this.setCustomValidity('נא לכתוב מספר טלפון')">
-                <br>
-                <label>דואר אלקטרוני</label>
-                <br>
-                <input type="email" required placeholder="abc@gmail.com"
-                    oninvalid="this.setCustomValidity('נא לכתוב דואר אלקטרוני')">
-                <br><br>
-                <button type="submit">שלח</button>
-            </form>
-
-            <p id="successMessage"> הפרטים נשלחו בהצלחה ! </p>
-        </span>
+    <div id="coffe_coupon">
+        <a href="projects/coffe_coupon/landing_page/coffe_coupon.html">
+            <img src="projects/coffe_coupon/landing_page/images/image.png" alt="university image">
+        </a>
     </div>
 
     <br><br><br>
 
-    <!-- .contact-us>h1+p+form>label*4+button -->
     <div class="contact-us" id="contact">
         <h1>צור קשר</h1>
         <p>
@@ -165,22 +142,6 @@
             <p>Alon Fridman</p>
         </div>
     </footer>
-
-    <script>
-        const form = document.getElementById('university_form');
-        const successMessage = document.getElementById('successMessage');
-
-        form.addEventListener('submit', function (event) {
-            event.preventDefault();
-            successMessage.style.display = 'block';
-            form.reset();
-
-            setTimeout(() => {
-                successMessage.style.display = 'none';
-            }, 3000);
-
-        });
-    </script>
 
 </body>
 

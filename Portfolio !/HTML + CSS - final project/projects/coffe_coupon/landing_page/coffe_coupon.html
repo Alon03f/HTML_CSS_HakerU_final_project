@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alon's protfolio - coffe_coupon</title>
+    <link rel="stylesheet" href="coffe_coupon.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+
+<body>
+
+    <div id="coffe_coupon">
+
+        <img src="images/coffe.png" alt="university image">
+        <span>
+            <h1>קפה טוב לבוקר טוב</h1>
+            <p>
+                לקבלת הקופון לקפה חינם ומפנק עבורכם ו 50% לחבר/ה בקניית קפה שיפתח לכם את היום על הצד הנכון השאירו פרטים
+                :
+            </p>
+            <form id="coffe_coupon_form" action="">
+                <label>שם מלא</label>
+                <br>
+                <input type="text" required placeholder="שם מלא" oninvalid="this.setCustomValidity('נא לכתוב שם מלא')">
+                <br>
+                <label>דואר אלקטרוני</label>
+                <br>
+                <input type="email" required placeholder="abc@gmail.com"
+                    oninvalid="this.setCustomValidity('נא לכתוב דואר אלקטרוני')">
+                <br><br>
+                <button type="submit">שליחה</button>
+            </form>
+
+            <p id="successMessage">
+                הפרטים נשלחו בהצלחה !
+                <br>
+                הקוד ישלח במייל
+            </p>
+        </span>
+    </div>
+
+    <script>
+        const form = document.getElementById('coffe_coupon_form');
+        const successMessage = document.getElementById('successMessage');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            successMessage.style.display = 'block';
+            form.reset();
+
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 3000);
+
+        });
+    </script>
+
+</body>
+
+</html>

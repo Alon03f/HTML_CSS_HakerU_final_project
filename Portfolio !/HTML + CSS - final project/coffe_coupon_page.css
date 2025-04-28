@@ -15,9 +15,6 @@
 
 
 @font-face {
-    font-family: DavidLibre-Regular;
-    src: url(fonts/David_Libre/DavidLibre-Regular.ttf);
-
     font-family: Alef;
     src: url(fonts/Alef/Alef-Regular.ttf);
 }
@@ -45,10 +42,10 @@ img.protfolio_logo:hover {
 }
 
 div.stiky_nav p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Alef, Arial, Helvetica, sans-serif;
     float: left;
     margin: 30px -160px 0px 160px;
-    font-size: 0.8em;
+    font-size: 1.5em;
 }
 
 ul {
@@ -62,7 +59,7 @@ div.stiky_nav nav ul li {
     height: 30px;
     margin: 25px 150px 0px -145px;
     font-size: 1em;
-    font-family: DavidLibre-Regular, Arial, Helvetica, sans-serif;
+    font-family: Alef, Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #f0e3d1;
     border: 0px solid #000;
@@ -126,61 +123,31 @@ span.MainHeader p {
     width: 1000px;
 }
 
-#university {
+span.MainHeader a button {
+    font-size: 1em;
+    font-family: Alef, Arial, Helvetica, sans-serif;
+    padding: 2px;
+    background-color: #fff;
+    border: 2px outset black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+span.MainHeader a button:hover {
+    transform: scale(0.95);
+}
+
+#coffe_coupon {
+    display: block;
     margin: 0 auto;
-    background-color: rgb(198, 201, 194, 0.8);
-    background: url('university-images/BGC.png');
-    background-size: 50px;
     box-shadow: 0px 0px 20px 0px;
     width: 1400px;
     height: 700px;
-    line-height: 1.2;
-    font-size: 1em;
-    font-family: Alef, Arial, Helvetica, sans-serif;
 }
 
-#university img {
-    float: left;
-    width: 500px;
-    margin-left: 150px;
-    margin-top: 100px;
-}
-
-#university span {
-    float: left;
-    margin: 150px 0px 0px 20px;
-    border: 2px solid rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(1.5px);
-}
-
-#university span p {
-    padding: 15px 0px 15px 0px;
-}
-
-#university span input {
-    width: 250px;
-    height: 30px;
-}
-
-#university span button {
-    display: block;
-    padding: 2px;
-    margin: 10px;
-    background-color: #fff;
-    border: 2px outset black;
-    border-radius: 5px;
-}
-
-#successMessage {
-    display: none;
-    font-weight: bold;
-    margin-top: 10px;
-    background-color: rgba(118, 255, 125, 0.3);
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-    margin-top: 20px;
-    font-family: Alef, Arial, sans-serif;
+#coffe_coupon:hover {
+    transform: scale(0.99);
+    background-color: #dbdbdb;
 }
 
 .contact-us {
@@ -217,12 +184,13 @@ span.MainHeader p {
     background-color: #fff;
     border: 2px outset black;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .contact-us form button:hover {
     background-color: #dbdbdb;
     transform: scale(0.9);
-    cursor: pointer;
+
     z-index: 1;
 }
 

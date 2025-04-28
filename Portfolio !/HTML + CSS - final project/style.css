@@ -15,9 +15,6 @@
 
 
 @font-face {
-    font-family: DavidLibre-Regular;
-    src: url(fonts/David_Libre/DavidLibre-Regular.ttf);
-
     font-family: Alef;
     src: url(fonts/Alef/Alef-Regular.ttf);
 }
@@ -45,7 +42,7 @@ img.protfolio_logo:hover {
 }
 
 div.stiky_nav p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Alef, Arial, Helvetica, sans-serif;
     float: left;
     margin: 30px -160px 0px 160px;
     font-size: 0.8em;
@@ -55,14 +52,14 @@ ul {
     list-style-type: none;
 }
 
-div.stiky_nav nav ul li {
+div.stiky_nav nav>ul li {
     float: right;
     display: block;
     width: 100px;
     height: 30px;
     margin: 25px 150px 0px -145px;
     font-size: 1em;
-    font-family: DavidLibre-Regular, Arial, Helvetica, sans-serif;
+    font-family: Alef, Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #f0e3d1;
     border: 0px solid #000;
@@ -92,9 +89,13 @@ div.stiky_nav nav ul li ul {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 0px;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+div.stiky_nav nav ul li ul li {
+    left: 150px;
 }
 
 div.stiky_nav nav ul li:hover ul {
@@ -165,9 +166,16 @@ div.AboutMe button a {
 
 div.AboutMe button:hover {
     background-color: #dbdbdb;
-    transform: scale(0.9);
+    transform: scale(0.95);
     cursor: pointer;
     z-index: 1;
+}
+
+h1#projects {
+    font-size: 3em;
+    font-family: Alef, Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
 }
 
 .containerGrid {
@@ -181,23 +189,49 @@ div.AboutMe button:hover {
     gap: 20px;
     text-align: center;
     justify-items: center;
-
 }
 
-.containerGrid p {
+.containerGrid span {
     width: 300px;
     height: 300px;
+    border-radius: 20px;
 }
 
-.containerGrid p:nth-child(odd) {
+.containerGrid span h3,
+p {
+    padding: 5px;
+}
+
+.containerGrid span button {
+    font-size: 1em;
+    font-family: Alef, Arial, Helvetica, sans-serif;
+    display: block;
+    margin: 0 auto;
+    padding: 2px;
+    background-color: rgb(255, 255, 255);
+    border: 0.5px outset black;
+    border-radius: 50px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.containerGrid span button:hover {
+    transform: scale(0.95);
+}
+
+.containerGrid span a {
+    text-decoration: none;
+}
+
+.containerGrid span:nth-child(odd) {
     background-color: rgb(150, 150, 150);
 }
 
-.containerGrid p:nth-child(even) {
+.containerGrid span:nth-child(even) {
     background-color: rgb(200, 200, 200);
 }
 
-.containerGrid p:hover {
+.containerGrid span:hover {
     transform: scale(0.95);
     box-shadow: 1px 1px 10px 0px;
     z-index: 3;
@@ -241,7 +275,7 @@ div.AboutMe button:hover {
 
 .contact-us form button:hover {
     background-color: #dbdbdb;
-    transform: scale(0.9);
+    transform: scale(0.95);
     cursor: pointer;
     z-index: 1;
 }
