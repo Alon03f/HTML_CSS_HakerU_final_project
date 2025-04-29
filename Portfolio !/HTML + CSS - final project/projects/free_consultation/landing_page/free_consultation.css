@@ -19,12 +19,12 @@ body {
     margin-top: 50px;
 }
 
-.landing-wrapper {
+.landing_wrapper {
     display: flex;
     justify-content: center;
 }
 
-.landing-container {
+.landing_container {
     position: relative;
     background: rgb(255, 255, 255);
     display: flex;
@@ -38,12 +38,12 @@ body {
     height: 500px;
 }
 
-.form-section {
+.form_section {
     width: 50%;
     text-align: left;
 }
 
-.form-section h1 {
+.form_section h1 {
     color: lightsalmon;
     font-size: 36px;
     margin-bottom: 10px;
@@ -51,20 +51,20 @@ body {
     text-align: right;
 }
 
-.form-section p {
+.form_section p {
     font-size: 16px;
     color: #555;
     margin-bottom: 30px;
     text-align: right;
 }
 
-.form-group {
+.form_group {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
 }
 
-.form-group input {
+.form_group input {
     flex: 1;
     padding: 10px;
     border: none;
@@ -92,23 +92,23 @@ button {
     cursor: pointer;
 }
 
-.image-section {
+.image_section {
     width: 40%;
     text-align: center;
 }
 
-.image-section img {
+.image_section img {
     max-width: 100%;
     height: auto;
 }
 
-.corner-line {
+.corner_line {
     position: absolute;
     background-color: lightsalmon;
     z-index: 2;
 }
 
-.top-right {
+.top_right {
     top: 0;
     right: 0;
     width: 300px;
@@ -116,7 +116,7 @@ button {
     border-top-right-radius: 8px;
 }
 
-.bottom-left {
+.bottom_left {
     bottom: 0;
     left: 0;
     width: 450px;
@@ -124,7 +124,7 @@ button {
     border-bottom-left-radius: 8px;
 }
 
-.social-buttons {
+.social_buttons {
     position: absolute;
     bottom: 40px;
     left: 30px;
@@ -133,11 +133,11 @@ button {
     z-index: 3;
 }
 
-.social-buttons img {
+.social_buttons img {
     width: 30px;
 }
 
-.social-btn {
+.social_btn {
     background-color: lightsalmon;
     color: black;
     width: 50px;
@@ -151,7 +151,7 @@ button {
     transition: background-color 0.3s ease;
 }
 
-.social-btn:hover {
+.social_btn:hover {
     background-color: orange;
     color: white;
     transform: scale(0.95);
@@ -181,71 +181,104 @@ button {
     }
 }
 
-.top-right {
+.top_right {
     animation: slideInRight 1s ease-out forwards;
 }
 
-.bottom-left {
+.bottom_left {
     animation: slideInLeft 1s ease-out forwards;
     animation-delay: 0.2s;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.social_buttons a {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.social_buttons a:nth-child(4) {
+    animation-delay: 0.2s;
+}
+
+.social_buttons a:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.social_buttons a:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.social_buttons a:nth-child(1) {
+    animation-delay: 0.8s;
+}
+
 @media (max-width: 1399.98px) {
-    .landing-container {
+    .landing_container {
         padding: 30px;
     }
 
-    .form-section h1 {
+    .form_section h1 {
         font-size: 32px;
     }
 
-    .social-btn {
+    .social_btn {
         width: 45px;
         height: 45px;
         font-size: 20px;
     }
 
-    .social-buttons {
+    .social_buttons {
         bottom: 35px;
         left: 25px;
     }
 }
 
 @media (max-width: 1199.98px) {
-    .landing-container {
+    .landing_container {
         padding: 25px;
     }
 
-    .form-section h1 {
+    .form_section h1 {
         font-size: 28px;
     }
 
-    .form-group {
+    .form_group {
         flex-direction: column;
     }
 
-    .form-group input {
+    .form_group input {
         width: 100%;
     }
 
-    .social-btn {
+    .social_btn {
         width: 40px;
         height: 40px;
         font-size: 18px;
     }
 
-    .social-buttons {
+    .social_buttons {
         bottom: 30px;
         left: 20px;
     }
 }
 
 @media (max-width: 991.98px) {
-    .landing-container {
+    .landing_container {
         padding: 20px;
     }
 
-    .form-section h1 {
+    .form_section h1 {
         font-size: 24px;
     }
 
@@ -253,44 +286,44 @@ button {
         height: 100px;
     }
 
-    .social-btn {
+    .social_btn {
         width: 36px;
         height: 36px;
         font-size: 16px;
     }
 
-    .social-buttons {
+    .social_buttons {
         bottom: 15px;
         left: 15px;
     }
 }
 
 @media (max-width: 767.98px) {
-    .landing-container {
+    .landing_container {
         flex-direction: column;
         text-align: center;
         padding: 20px;
         height: 700px;
     }
 
-    .image-section,
+    .image_section,
     .form-section {
         width: 100%;
     }
 
-    .image-section {
+    .image_section {
         margin-bottom: 20px;
     }
 
-    .form-section {
+    .form_section {
         text-align: center;
     }
 
-    .form-group {
+    .form_group {
         flex-direction: column;
     }
 
-    .form-group input {
+    .form_group input {
         width: 100%;
     }
 
@@ -298,22 +331,22 @@ button {
         width: 100%;
     }
 
-    .corner-line {
+    .corner_line {
         display: none;
     }
 
-    .image-section img {
+    .image_section img {
         max-width: 300px;
         height: auto;
     }
 
-    .social-buttons {
+    .social_buttons {
         position: static;
         justify-content: center;
         margin-top: 20px;
     }
 
-    .social-btn {
+    .social_btn {
         width: 44px;
         height: 44px;
         font-size: 20px;
@@ -321,11 +354,11 @@ button {
 }
 
 @media (max-width: 575.98px) {
-    .landing-container {
+    .landing_container {
         padding: 15px;
     }
 
-    .form-section h1 {
+    .form_section h1 {
         font-size: 20px;
     }
 
@@ -334,13 +367,13 @@ button {
         padding: 8px 16px;
     }
 
-    .social-btn {
+    .social_btn {
         width: 40px;
         height: 40px;
         font-size: 18px;
     }
 
-    .social-buttons {
+    .social_buttons {
         margin-top: 15px;
         justify-content: center;
     }
