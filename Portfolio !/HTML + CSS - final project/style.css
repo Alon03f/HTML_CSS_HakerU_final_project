@@ -45,7 +45,7 @@ div.stiky_nav p {
     font-family: Alef, Arial, Helvetica, sans-serif;
     float: left;
     margin: 30px -160px 0px 160px;
-    font-size: 0.8em;
+    font-size: 1.2em;
 }
 
 ul {
@@ -91,7 +91,9 @@ div.stiky_nav nav ul li ul {
     top: 100%;
     left: 0px;
     width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #f7d19b;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 1);
+    border-radius: 12px;
 }
 
 div.stiky_nav nav ul li ul li {
@@ -178,65 +180,6 @@ h1#projects {
     padding: 10px;
 }
 
-/* .containerGrid {
-    font-size: 1em;
-    font-family: Alef, Arial, Helvetica, sans-serif;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    margin: 0 auto;
-    width: 1000px;
-    gap: 20px;
-    text-align: center;
-    justify-items: center;
-}
-
-.containerGrid div {
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-}
-
-.containerGrid div h3,
-p {
-    padding: 5px;
-}
-
-.containerGrid div button {
-    font-size: 1em;
-    font-family: Alef, Arial, Helvetica, sans-serif;
-    display: block;
-    margin: 0 auto;
-    padding: 2px;
-    background-color: rgb(255, 255, 255);
-    border: 0.5px outset black;
-    border-radius: 50px;
-    padding: 3px;
-    cursor: pointer;
-}
-
-.containerGrid div button:hover {
-    transform: scale(0.95);
-}
-
-.containerGrid div a {
-    text-decoration: none;
-}
-
-.containerGrid div:nth-child(odd) {
-    background-color: rgb(150, 150, 150);
-}
-
-.containerGrid div:nth-child(even) {
-    background-color: rgb(200, 200, 200);
-}
-
-.containerGrid div:hover {
-    transform: scale(0.95);
-    box-shadow: 1px 1px 10px 0px;
-    z-index: 3;
-} */
-
 .containerGrid {
     font-size: 1em;
     font-family: Alef, Arial, Helvetica, sans-serif;
@@ -295,6 +238,7 @@ p {
 .project-card a {
     text-decoration: none;
 }
+
 .contact-us {
     font-size: 1em;
     font-family: Alef, Arial, Helvetica, sans-serif;
@@ -407,6 +351,14 @@ p {
         margin: 20px 80px 0px -75px;
     }
 
+    div.stiky_nav nav ul li#all_projects {
+        width: 100px;
+    }
+
+    div.stiky_nav nav ul li ul li {
+        left: 75px;
+    }
+
     span.MainHeader {
         height: 400px;
     }
@@ -445,6 +397,10 @@ p {
 
     div.stiky_nav nav ul li {
         margin: 20px 50px 0px -45px;
+    }
+
+    div.stiky_nav nav ul li ul li {
+        left: 45px;
     }
 
     span.MainHeader p {
@@ -496,6 +452,14 @@ p {
         font-size: 0.9em;
     }
 
+    div.stiky_nav nav ul li#all_projects {
+        width: 90px;
+    }
+
+    div.stiky_nav nav ul li ul li {
+        left: 10px;
+    }
+
     span.MainHeader {
         height: 500px;
     }
@@ -521,6 +485,14 @@ p {
     div.stiky_nav nav ul li {
         width: 65px;
         font-size: 0.8em;
+    }
+
+    div.stiky_nav nav ul li#all_projects {
+        width: 80px;
+    }
+
+    div.stiky_nav nav ul li ul li {
+        left: 7px;
     }
 
     span.MainHeader {
@@ -551,6 +523,10 @@ p {
 
     div.stiky_nav nav ul li {
         width: 55px;
+    }
+
+    div.stiky_nav nav ul li ul li {
+        left: 3px;
     }
 
     span.MainHeader {

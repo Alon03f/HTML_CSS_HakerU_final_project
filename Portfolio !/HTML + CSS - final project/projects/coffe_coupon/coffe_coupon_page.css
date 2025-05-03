@@ -44,14 +44,14 @@ div.stiky_nav p {
     font-family: Alef, Arial, Helvetica, sans-serif;
     float: left;
     margin: 30px -160px 0px 160px;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 ul {
     list-style-type: none;
 }
 
-div.stiky_nav nav ul li {
+div.stiky_nav nav>ul li {
     float: right;
     display: block;
     width: 100px;
@@ -62,6 +62,7 @@ div.stiky_nav nav ul li {
     text-align: center;
     background-color: #f0e3d1;
     border: 0px solid #000;
+    /* מתלבט האם להוסיף או להוריד את הבורדר - לשאול את מאמי */
     position: relative;
     z-index: 1;
     border-radius: 15px;
@@ -87,13 +88,23 @@ div.stiky_nav nav ul li ul {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 0px;
     width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #f7d19b;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 1);
+    border-radius: 12px;
 }
 
 div.stiky_nav nav ul li:hover ul {
     display: block;
+}
+
+div.stiky_nav nav ul li#all_projects {
+    width: 120px;
+}
+
+div.stiky_nav nav ul li ul li {
+    left: 140px;
 }
 
 span.MainHeader {
@@ -261,6 +272,10 @@ span.MainHeader a button:hover {
         margin: 20px 80px 0px -75px;
     }
 
+    div.stiky_nav nav ul li ul li {
+        left: 65px;
+    }
+
     span.MainHeader {
         height: 400px;
     }
@@ -287,12 +302,12 @@ span.MainHeader a button:hover {
         height: 50px;
     }
 
-    #coffe_coupon {
+    #outside_the_box {
         width: 1000px;
         height: 600px;
     }
 
-    #coffe_coupon img {
+    #outside_the_box img {
         width: 1000px;
         height: 600px;
     }
@@ -310,6 +325,10 @@ span.MainHeader a button:hover {
 
     div.stiky_nav nav ul li {
         margin: 20px 50px 0px -45px;
+    }
+
+    div.stiky_nav nav ul li ul li {
+        left: 35px;
     }
 
     span.MainHeader p {
@@ -337,15 +356,16 @@ span.MainHeader a button:hover {
         height: 45px;
     }
 
-    #coffe_coupon {
+    #outside_the_box {
         width: 800px;
         height: 500px;
     }
 
-    #coffe_coupon img {
+    #outside_the_box img {
         width: 800px;
         height: 500px;
     }
+
 }
 
 @media (max-width: 991.98px) {
@@ -371,6 +391,14 @@ span.MainHeader a button:hover {
         font-size: 0.9em;
     }
 
+    div.stiky_nav nav ul li#all_projects {
+        width: 110px;
+    }
+
+    div.stiky_nav nav ul li ul li {
+        left: 0px;
+    }
+
     span.MainHeader {
         height: 500px;
     }
@@ -391,21 +419,30 @@ span.MainHeader a button:hover {
         padding: 50px 70px 50px 400px;
     }
 
-    #coffe_coupon {
+    #outside_the_box {
         width: 700px;
         height: 400px;
     }
 
-    #coffe_coupon img {
+    #outside_the_box img {
         width: 700px;
         height: 400px;
     }
+
 }
 
 @media (max-width: 767.98px) {
     div.stiky_nav nav ul li {
         width: 65px;
         font-size: 0.8em;
+    }
+
+    div.stiky_nav nav ul li#all_projects {
+        width: 110px;
+    }
+
+    div.stiky_nav nav ul li ul li {
+        left: -5px;
     }
 
     span.MainHeader {
@@ -430,22 +467,21 @@ span.MainHeader a button:hover {
         padding: 50px 70px 50px 200px;
     }
 
-    #coffe_coupon {
+    #outside_the_box {
         width: 500px;
         height: 300px;
     }
 
-    #coffe_coupon img {
+    #outside_the_box img {
         width: 500px;
         height: 300px;
     }
-
 }
 
 @media (max-width: 575.98px) {
 
     div.stiky_nav nav ul li {
-        width: 55px;
+        width: 65px;
     }
 
     span.MainHeader {
@@ -468,12 +504,12 @@ span.MainHeader a button:hover {
         padding: 50px 70px 50px 40px;
     }
 
-    #coffe_coupon {
+    #outside_the_box {
         width: 400px;
         height: 300px;
     }
 
-    #coffe_coupon img {
+    #outside_the_box img {
         width: 400px;
         height: 300px;
     }

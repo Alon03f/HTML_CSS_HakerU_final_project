@@ -44,14 +44,14 @@ div.stiky_nav p {
     font-family: Alef, Arial, Helvetica, sans-serif;
     float: left;
     margin: 30px -160px 0px 160px;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 ul {
     list-style-type: none;
 }
 
-div.stiky_nav nav ul li {
+div.stiky_nav nav>ul li {
     float: right;
     display: block;
     width: 100px;
@@ -62,6 +62,7 @@ div.stiky_nav nav ul li {
     text-align: center;
     background-color: #f0e3d1;
     border: 0px solid #000;
+    /* מתלבט האם להוסיף או להוריד את הבורדר - לשאול את מאמי */
     position: relative;
     z-index: 1;
     border-radius: 15px;
@@ -87,9 +88,19 @@ div.stiky_nav nav ul li ul {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 0px;
     width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #f7d19b;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 1);
+    border-radius: 12px;
+}
+
+div.stiky_nav nav ul li#all_projects {
+    width: 120px;
+}
+
+div.stiky_nav nav ul li ul li {
+    left: 140px;
 }
 
 div.stiky_nav nav ul li:hover ul {
@@ -265,6 +276,10 @@ span.MainHeader a button:hover {
         margin: 20px 80px 0px -75px;
     }
 
+    div.stiky_nav nav ul li ul li {
+        left: 65px;
+    }
+
     span.MainHeader {
         height: 400px;
     }
@@ -314,6 +329,10 @@ span.MainHeader a button:hover {
 
     div.stiky_nav nav ul li {
         margin: 20px 50px 0px -45px;
+    }
+
+    div.stiky_nav nav ul li ul li {
+        left: 35px;
     }
 
     span.MainHeader p {
@@ -376,6 +395,14 @@ span.MainHeader a button:hover {
         font-size: 0.9em;
     }
 
+    div.stiky_nav nav ul li#all_projects {
+        width: 110px;
+    }
+
+    div.stiky_nav nav ul li ul li {
+        left: 0px;
+    }
+
     span.MainHeader {
         height: 500px;
     }
@@ -414,6 +441,14 @@ span.MainHeader a button:hover {
         font-size: 0.8em;
     }
 
+    div.stiky_nav nav ul li#all_projects {
+        width: 110px;
+    }
+
+    div.stiky_nav nav ul li ul li {
+        left: -5px;
+    }
+
     span.MainHeader {
         height: 750px;
     }
@@ -450,7 +485,7 @@ span.MainHeader a button:hover {
 @media (max-width: 575.98px) {
 
     div.stiky_nav nav ul li {
-        width: 55px;
+        width: 65px;
     }
 
     span.MainHeader {
