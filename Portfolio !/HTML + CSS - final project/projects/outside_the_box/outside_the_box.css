@@ -7,7 +7,7 @@
 }
 
 #home,
-#about,
+#outside_the_box,
 #projects,
 #contact {
     scroll-margin-top: 100px;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: Alef;
-    src: url(fonts/Alef/Alef-Regular.ttf);
+    src: url(../../fonts/Alef/Alef-Regular.ttf);
 }
 
 .stiky_nav {
@@ -25,7 +25,6 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    /* background-color: #9d9283; = אופציה לצבע - לבדוק עם מאמי */
 }
 
 .protfolio_logo {
@@ -45,14 +44,14 @@ div.stiky_nav p {
     font-family: Alef, Arial, Helvetica, sans-serif;
     float: left;
     margin: 30px -160px 0px 160px;
-    font-size: 0.8em;
+    font-size: 1.5em;
 }
 
 ul {
     list-style-type: none;
 }
 
-div.stiky_nav nav>ul li {
+div.stiky_nav nav ul li {
     float: right;
     display: block;
     width: 100px;
@@ -63,7 +62,6 @@ div.stiky_nav nav>ul li {
     text-align: center;
     background-color: #f0e3d1;
     border: 0px solid #000;
-    /* מתלבט האם להוסיף או להוריד את הבורדר - לשאול את מאמי */
     position: relative;
     z-index: 1;
     border-radius: 15px;
@@ -89,13 +87,9 @@ div.stiky_nav nav ul li ul {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0px;
+    left: 0;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-div.stiky_nav nav ul li ul li {
-    left: 150px;
 }
 
 div.stiky_nav nav ul li:hover ul {
@@ -108,7 +102,7 @@ span.MainHeader {
     padding: 10px;
     text-align: center;
     font-family: Alef, Arial, Helvetica, sans-serif;
-    background-image: url(images/main_header_background1.jpg);
+    background-image: url(../../images/main_header_background1.jpg);
     height: 350px;
 }
 
@@ -127,177 +121,41 @@ span.MainHeader p {
     width: 1000px;
 }
 
-div.AboutMe img {
-    display: block;
-    border: 2px solid #000;
-    border-radius: 50%;
-    margin: 15px auto;
-}
-
-div.AboutMe h1 {
-    font-size: 3em;
-    font-family: Alef, Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-div.AboutMe p {
-    font-size: 1.1em;
-    line-height: 1.5;
-    text-align: center;
-    margin: 0 auto;
-    width: 1000px;
-}
-
-div.AboutMe button {
+span.MainHeader a button {
     font-size: 1em;
     font-family: Alef, Arial, Helvetica, sans-serif;
-    display: block;
-    margin: 0 auto;
     padding: 2px;
     background-color: #fff;
-    border: 3px outset black;
-    border-radius: 5px;
-}
-
-div.AboutMe button a {
-    text-decoration: none;
-    color: black;
-}
-
-div.AboutMe button:hover {
-    background-color: #dbdbdb;
-    transform: scale(0.95);
+    border: 2px outset black;
+    border-radius: 10px;
     cursor: pointer;
-    z-index: 1;
 }
 
-h1#projects {
-    font-size: 3em;
-    font-family: Alef, Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding: 10px;
+span.MainHeader a button:hover {
+    transform: scale(0.95);
 }
 
-/* .containerGrid {
-    font-size: 1em;
-    font-family: Alef, Arial, Helvetica, sans-serif;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    margin: 0 auto;
-    width: 1000px;
-    gap: 20px;
-    text-align: center;
-    justify-items: center;
-}
-
-.containerGrid div {
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-}
-
-.containerGrid div h3,
-p {
-    padding: 5px;
-}
-
-.containerGrid div button {
-    font-size: 1em;
-    font-family: Alef, Arial, Helvetica, sans-serif;
+#outside_the_box {
     display: block;
     margin: 0 auto;
-    padding: 2px;
-    background-color: rgb(255, 255, 255);
-    border: 0.5px outset black;
-    border-radius: 50px;
-    padding: 3px;
-    cursor: pointer;
+    box-shadow: 0px 0px 20px 0px;
+    width: 1400px;
+    height: 700px;
 }
 
-.containerGrid div button:hover {
-    transform: scale(0.95);
+#outside_the_box a {
+    width: 100px;
+    height: 100px;
 }
 
-.containerGrid div a {
-    text-decoration: none;
+#outside_the_box:hover {
+    transform: scale(0.99);
+    background-color: #dbdbdb;
 }
 
-.containerGrid div:nth-child(odd) {
-    background-color: rgb(150, 150, 150);
-}
-
-.containerGrid div:nth-child(even) {
-    background-color: rgb(200, 200, 200);
-}
-
-.containerGrid div:hover {
-    transform: scale(0.95);
-    box-shadow: 1px 1px 10px 0px;
-    z-index: 3;
-} */
-
-.containerGrid {
-    font-size: 1em;
-    font-family: Alef, Arial, Helvetica, sans-serif;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    margin: 0 auto;
-    width: 1000px;
-    gap: 20px;
-    text-align: center;
-    justify-items: center;
-}
-
-.project-card {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding: 15px;
-    border-radius: 20px;
-    transition: 0.3s;
-}
-
-.project-card:nth-child(odd) {
-    background-color: rgb(150, 150, 150);
-}
-
-.project-card:nth-child(even) {
-    background-color: rgb(200, 200, 200);
-}
-
-.project-card:hover {
-    transform: scale(0.95);
-    box-shadow: 1px 1px 10px 0px;
-    z-index: 3;
-}
-
-.project-card button {
-    font-size: 1em;
-    font-family: Alef, Arial, Helvetica, sans-serif;
-    padding: 5px 10px;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.project-card button:hover {
-    background-color: #eee;
-}
-
-.project-card a {
-    text-decoration: none;
-}
 .contact-us {
     font-size: 1em;
-    font-family: Alef, Arial, Helvetica, sans-serif;
+    font-family: Alef, Arial, Helvetic a, sans-serif;
     padding: 50px 190px 50px 900px;
     background-color: #dbdbdb;
     line-height: 1.5;
@@ -329,12 +187,12 @@ p {
     background-color: #fff;
     border: 2px outset black;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .contact-us form button:hover {
     background-color: #dbdbdb;
-    transform: scale(0.95);
-    cursor: pointer;
+    transform: scale(0.9);
     z-index: 1;
 }
 
@@ -432,6 +290,17 @@ p {
         width: 50px;
         height: 50px;
     }
+
+    #outside_the_box {
+        width: 1000px;
+        height: 600px;
+    }
+
+    #outside_the_box img {
+        width: 1000px;
+        height: 600px;
+    }
+
 }
 
 @media (max-width: 1199.98px) {
@@ -471,6 +340,17 @@ p {
         width: 45px;
         height: 45px;
     }
+
+    #outside_the_box {
+        width: 800px;
+        height: 500px;
+    }
+
+    #outside_the_box img {
+        width: 800px;
+        height: 500px;
+    }
+
 }
 
 @media (max-width: 991.98px) {
@@ -515,6 +395,17 @@ p {
     .contact-us {
         padding: 50px 70px 50px 400px;
     }
+
+    #outside_the_box {
+        width: 700px;
+        height: 400px;
+    }
+
+    #outside_the_box img {
+        width: 700px;
+        height: 400px;
+    }
+
 }
 
 @media (max-width: 767.98px) {
@@ -545,6 +436,15 @@ p {
         padding: 50px 70px 50px 200px;
     }
 
+    #outside_the_box {
+        width: 500px;
+        height: 300px;
+    }
+
+    #outside_the_box img {
+        width: 500px;
+        height: 300px;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -571,6 +471,16 @@ p {
 
     .contact-us {
         padding: 50px 70px 50px 40px;
+    }
+
+    #outside_the_box {
+        width: 400px;
+        height: 300px;
+    }
+
+    #outside_the_box img {
+        width: 400px;
+        height: 300px;
     }
 
 }

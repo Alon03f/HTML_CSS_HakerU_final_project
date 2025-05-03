@@ -7,7 +7,7 @@
 }
 
 #home,
-#university,
+#coffe_coupon,
 #projects,
 #contact {
     scroll-margin-top: 100px;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: Alef;
-    src: url(fonts/Alef/Alef-Regular.ttf);
+    src: url(../../fonts/Alef/Alef-Regular.ttf);
 }
 
 .stiky_nav {
@@ -25,7 +25,6 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    /* background-color: #9d9283; = אופציה לצבע - לבדוק עם מאמי */
 }
 
 .protfolio_logo {
@@ -63,7 +62,6 @@ div.stiky_nav nav ul li {
     text-align: center;
     background-color: #f0e3d1;
     border: 0px solid #000;
-    /* מתלבט האם להוסיף או להוריד את הבורדר - לשאול את מאמי */
     position: relative;
     z-index: 1;
     border-radius: 15px;
@@ -104,7 +102,7 @@ span.MainHeader {
     padding: 10px;
     text-align: center;
     font-family: Alef, Arial, Helvetica, sans-serif;
-    background-image: url(images/main_header_background1.jpg);
+    background-image: url(../../images/main_header_background1.jpg);
     height: 350px;
 }
 
@@ -289,20 +287,16 @@ span.MainHeader a button:hover {
         height: 50px;
     }
 
-    #university {
+    #coffe_coupon {
         width: 1000px;
-        height: 700px;
+        height: 600px;
     }
 
-    #university img {
-        width: 300px;
-        margin-left: 50px;
-        margin-top: 170px;
+    #coffe_coupon img {
+        width: 1000px;
+        height: 600px;
     }
 
-    #university span {
-        width: 550px;
-    }
 }
 
 @media (max-width: 1199.98px) {
@@ -343,21 +337,14 @@ span.MainHeader a button:hover {
         height: 45px;
     }
 
-    #university {
-        width: 900px;
+    #coffe_coupon {
+        width: 800px;
         height: 500px;
     }
 
-    #university img {
-        width: 250px;
-        margin-left: 50px;
-        margin-top: 100px;
-    }
-
-    #university span {
-        width: 500px;
-        margin-top: 50px;
-        margin-left: 50px;
+    #coffe_coupon img {
+        width: 800px;
+        height: 500px;
     }
 }
 
@@ -404,21 +391,14 @@ span.MainHeader a button:hover {
         padding: 50px 70px 50px 400px;
     }
 
-    #university {
+    #coffe_coupon {
         width: 700px;
-        height: 500px;
+        height: 400px;
     }
 
-    #university img {
-        width: 200px;
-        margin-left: 50px;
-        margin-top: 100px;
-    }
-
-    #university span {
-        width: 350px;
-        margin-top: 50px;
-        margin-left: 50px;
+    #coffe_coupon img {
+        width: 700px;
+        height: 400px;
     }
 }
 
@@ -450,26 +430,14 @@ span.MainHeader a button:hover {
         padding: 50px 70px 50px 200px;
     }
 
-    #university {
+    #coffe_coupon {
         width: 500px;
-        height: 500px;
+        height: 300px;
     }
 
-    #university img {
-        width: 150px;
-        margin-left: 50px;
-        margin-top: 100px;
-    }
-
-    #university span {
-        width: 250px;
-        margin-top: 50px;
-        margin-left: 30px;
-        font-size: 0.8em;
-    }
-
-    #university span input {
-        width: 200px;
+    #coffe_coupon img {
+        width: 500px;
+        height: 300px;
     }
 
 }
@@ -500,27 +468,14 @@ span.MainHeader a button:hover {
         padding: 50px 70px 50px 40px;
     }
 
-    #university {
+    #coffe_coupon {
         width: 400px;
-        height: 500px;
+        height: 300px;
     }
 
-    #university img {
-        width: 150px;
-        margin-left: 50px;
-        margin-top: 150px;
-    }
-
-    #university span {
-        width: 100px;
-        width: 180px;
-        margin-top: 30px;
-        margin-left: 10px;
-        font-size: 0.8em;
-    }
-
-    #university span input {
-        width: 150px;
+    #coffe_coupon img {
+        width: 400px;
+        height: 300px;
     }
 
 }
