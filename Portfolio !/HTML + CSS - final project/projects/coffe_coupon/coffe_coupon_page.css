@@ -380,7 +380,7 @@ span.MainHeader a button:hover {
     }
 
     div.stiky_nav p {
-        margin: 5px -5px 0px -40px;
+        margin: 0;
         font-size: 0.7em;
     }
 
@@ -438,7 +438,7 @@ span.MainHeader a button:hover {
     }
 
     div.stiky_nav nav ul li#all_projects {
-        width: 110px;
+        display: none;
     }
 
     div.stiky_nav nav ul li ul li {

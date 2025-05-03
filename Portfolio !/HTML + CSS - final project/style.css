@@ -25,6 +25,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
+    padding: 0px 0;
     /* background-color: #9d9283; = אופציה לצבע - לבדוק עם מאמי */
 }
 
@@ -441,7 +442,7 @@ h1#projects {
     }
 
     div.stiky_nav p {
-        margin: 5px -5px 0px -40px;
+        margin: 0;
         font-size: 0.7em;
     }
 
@@ -488,7 +489,7 @@ h1#projects {
     }
 
     div.stiky_nav nav ul li#all_projects {
-        width: 80px;
+        display: none;
     }
 
     div.stiky_nav nav ul li ul li {
